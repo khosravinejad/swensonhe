@@ -2,30 +2,36 @@
 buildscript {
     ext.versions = [
             //meta
-            code            : 1,
-            name            : '1.0.0',
+            code       : 1,
+            name       : '1.0.0',
 
             //build
-            min_sdk         : 24,
-            compile_sdk     : 33,
-            target_sdk      : 33,
-            java            : JavaVersion.VERSION_1_8,
-            kotlin          : '1.6.10',
+            min_sdk    : 24,
+            compile_sdk: 33,
+            target_sdk : 33,
+            java       : JavaVersion.VERSION_1_8,
+            kotlin     : '1.6.10',
 
             //support, AndroidX
-            core            : '1.7.0',
-            app_compat      : '1.4.1',
+            core       : '1.7.0',
+            app_compat : '1.4.1',
 
             //architecture components
-            lifecycle       : '2.4.1',
+            lifecycle  : '2.4.1',
+
+            // jetpack components
+            room            : '2.4.2',
 
             //google
-            material        : '1.5.0',
+            material   : '1.5.0',
+
+            //dependency injection
+            hilt       : '2.44',
 
             // network
-            retrofit        : '2.9.0',
-            okhttp          : '4.9.0',
-            gson            : '2.8.6',
+            retrofit   : '2.9.0',
+            okhttp     : '4.9.0',
+            gson       : '2.8.6',
     ]
 
     ext.modulez = [
@@ -39,8 +45,17 @@ buildscript {
             lifecycle_viewmodel           : 'lifecycle-viewmodel-ktx',
             lifecycle_viewmodel_savedstate: 'lifecycle-viewmodel-savedstate',
 
+            // jetpack components
+            room_runtime                  : 'room-runtime',
+            room_ktx                      : 'room-ktx',
+            room_compiler                 : 'room-compiler',
+
             //google
             material                      : 'material',
+
+            //dependency injection
+            hilt_android                  : 'hilt-android',
+            hilt_android_compiler         : 'hilt-android-compiler',
 
             // network
             retrofit                      : 'retrofit',
@@ -52,20 +67,26 @@ buildscript {
 
     ext.groupz = [
             //support, AndroidX
-            core            : 'androidx.core',
-            app_compat      : 'androidx.appcompat',
-            fragment        : 'androidx.fragment',
+            core      : 'androidx.core',
+            app_compat: 'androidx.appcompat',
+            fragment  : 'androidx.fragment',
 
             //architecture components
-            lifecycle       : 'androidx.lifecycle',
+            lifecycle : 'androidx.lifecycle',
+
+            // jetpack components
+            room            : 'androidx.room',
 
             //google
-            material        : 'com.google.android.material',
+            material  : 'com.google.android.material',
+
+            //dependency injection
+            hilt      : 'com.google.dagger',
 
             // network
-            retrofit        : 'com.squareup.retrofit2',
-            okhttp          : 'com.squareup.okhttp3',
-            gson            : 'com.google.code.gson',
+            retrofit  : 'com.squareup.retrofit2',
+            okhttp    : 'com.squareup.okhttp3',
+            gson      : 'com.google.code.gson',
     ]
 
     ext.deps = [
@@ -79,8 +100,17 @@ buildscript {
             lifecycle_viewmodel           : "$groupz.lifecycle:$modulez.lifecycle_viewmodel:$versions.lifecycle",
             lifecycle_viewmodel_savedstate: "$groupz.lifecycle:$modulez.lifecycle_viewmodel_savedstate:$versions.lifecycle",
 
+            // jetpack components
+            room_runtime                  : "$groupz.room:$modulez.room_runtime:$versions.room",
+            room_ktx                      : "$groupz.room:$modulez.room_ktx:$versions.room",
+            room_compiler                 : "$groupz.room:$modulez.room_compiler:$versions.room",
+
             //google
             google_material               : "$groupz.material:$modulez.material:$versions.material",
+
+            //dependency injection
+            hilt_android                  : "$groupz.hilt:$modulez.hilt_android:$versions.hilt",
+            hilt_android_compiler         : "$groupz.hilt:$modulez.hilt_android_compiler:$versions.hilt",
 
             // network
             retrofit                      : "$groupz.retrofit:$modulez.retrofit:$versions.retrofit",

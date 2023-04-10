@@ -50,8 +50,17 @@ dependencies {
     implementation deps.lifecycle_viewmodel
     implementation deps.lifecycle_viewmodel_savedstate
 
+    // jetpack components
+    implementation deps.room_runtime
+    implementation deps.room_ktx
+    kapt deps.room_compiler
+
     // Google
     implementation deps.google_material
+
+    // Dependency Injection
+    implementation deps.hilt_android
+    kapt deps.hilt_android_compiler
 
     // Network
     implementation deps.retrofit
