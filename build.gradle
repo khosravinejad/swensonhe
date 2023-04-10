@@ -21,6 +21,11 @@ buildscript {
 
             //google
             material        : '1.5.0',
+
+            // network
+            retrofit        : '2.9.0',
+            okhttp          : '4.9.0',
+            gson            : '2.8.6',
     ]
 
     ext.modulez = [
@@ -36,6 +41,13 @@ buildscript {
 
             //google
             material                      : 'material',
+
+            // network
+            retrofit                      : 'retrofit',
+            retrofit_converter_gson       : 'converter-gson',
+            okhttp                        : 'okhttp',
+            okhttp_logging_interceptor    : 'logging-interceptor',
+            gson                          : 'gson',
     ]
 
     ext.groupz = [
@@ -49,6 +61,11 @@ buildscript {
 
             //google
             material        : 'com.google.android.material',
+
+            // network
+            retrofit        : 'com.squareup.retrofit2',
+            okhttp          : 'com.squareup.okhttp3',
+            gson            : 'com.google.code.gson',
     ]
 
     ext.deps = [
@@ -64,6 +81,13 @@ buildscript {
 
             //google
             google_material               : "$groupz.material:$modulez.material:$versions.material",
+
+            // network
+            retrofit                      : "$groupz.retrofit:$modulez.retrofit:$versions.retrofit",
+            retrofit_converter_gson       : "$groupz.retrofit:$modulez.retrofit_converter_gson:$versions.retrofit",
+            okhttp                        : "$groupz.okhttp:$modulez.okhttp:$versions.okhttp",
+            okhttp_logging_interceptor    : "$groupz.okhttp:$modulez.okhttp_logging_interceptor:$versions.okhttp",
+            gson                          : "$groupz.gson:$modulez.gson:$versions.gson",
     ]
 
     repositories {
