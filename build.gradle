@@ -32,6 +32,9 @@ buildscript {
             retrofit   : '2.9.0',
             okhttp     : '4.9.0',
             gson       : '2.8.6',
+
+            // Other libraries
+            glide           : '4.13.0',
     ]
 
     ext.modulez = [
@@ -63,6 +66,10 @@ buildscript {
             okhttp                        : 'okhttp',
             okhttp_logging_interceptor    : 'logging-interceptor',
             gson                          : 'gson',
+
+            // Other libraries
+            glide                         : 'glide',
+            glide_compiler                : 'compiler',
     ]
 
     ext.groupz = [
@@ -87,6 +94,9 @@ buildscript {
             retrofit  : 'com.squareup.retrofit2',
             okhttp    : 'com.squareup.okhttp3',
             gson      : 'com.google.code.gson',
+
+            // Other libraries
+            glide           : 'com.github.bumptech.glide',
     ]
 
     ext.deps = [
@@ -118,6 +128,10 @@ buildscript {
             okhttp                        : "$groupz.okhttp:$modulez.okhttp:$versions.okhttp",
             okhttp_logging_interceptor    : "$groupz.okhttp:$modulez.okhttp_logging_interceptor:$versions.okhttp",
             gson                          : "$groupz.gson:$modulez.gson:$versions.gson",
+
+            // Other libraries
+            glide                         : "$groupz.glide:$modulez.glide:$versions.glide",
+            glide_compiler                : "$groupz.glide:$modulez.glide_compiler:$versions.glide",
     ]
 
     repositories {

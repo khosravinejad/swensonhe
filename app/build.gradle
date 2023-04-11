@@ -69,4 +69,8 @@ dependencies {
     implementation deps.okhttp
     implementation deps.okhttp_logging_interceptor
     implementation deps.gson
+
+    // Other libraries
+    implementation deps.glide
+    implementation deps.glide_compiler
 }
