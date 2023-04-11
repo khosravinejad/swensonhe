@@ -51,8 +51,8 @@ class ForecastAdapter : RecyclerView.Adapter<ForecastAdapter.ForecastViewHolder>
                 minMax.text =
                     binding.root.context.getString(
                         R.string.min_max,
-                        item.minTempC.toInt(),
-                        item.maxTempC.toInt()
+                        item.minTempF.toInt(),
+                        item.maxTempF.toInt()
                     )
             }
         }
