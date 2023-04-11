@@ -74,4 +74,24 @@ dependencies {
     // Other libraries
     implementation deps.glide
     implementation deps.glide_compiler
+
+    //test
+    testImplementation deps.coroutines_test
+    testImplementation deps.junit
+    testImplementation deps.assertJ
+    testImplementation deps.mockitoCore
+    testImplementation deps.mockitoKotlin
+    testImplementation deps.mockitoInline
+    testImplementation deps.testRunner
+    androidTestImplementation deps.testRunner
+    testImplementation deps.testRules
+    testImplementation deps.testCore
+    testImplementation deps.testExtJunit
+    testImplementation deps.androidxArchCore
+    testImplementation deps.robolectric
+    testImplementation deps.roomTest
+    kaptAndroidTest deps.hilt_android_compiler
+    androidTestImplementation deps.hilt_testing
+    debugImplementation deps.fragment_testing
+    androidTestImplementation deps.espresso
 }

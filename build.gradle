@@ -36,6 +36,22 @@ buildscript {
 
             // Other libraries
             glide           : '4.13.0',
+
+            //test
+            coroutines_test : '1.4.3',
+            junit           : '4.13',
+            assertJ         : '3.11.1',
+            mockitoCore     : '5.2.0',
+            mockitoKotlin   : '2.1.0',
+            mockitoInline   : '2.13.0',
+            testRunner      : '1.1.0',
+            testRules       : '1.1.0',
+            testCore        : '1.1.0',
+            testExtJunit    : '1.1.0',
+            androidxArchCore: '2.1.0',
+            robolectric     : '4.5.1',
+            fragment_testing: '1.4.1',
+            espresso        : '3.4.0'
     ]
 
     ext.modulez = [
@@ -72,6 +88,24 @@ buildscript {
             // Other libraries
             glide                         : 'glide',
             glide_compiler                : 'compiler',
+
+            //test
+            coroutines_test               : 'kotlinx-coroutines-test',
+            junit                         : 'junit',
+            assertJ                       : 'assertj-core',
+            mockitoCore                   : 'mockito-core',
+            mockitoKotlin                 : 'mockito-kotlin',
+            mockitoInline                 : 'mockito-inline',
+            testRunner                    : 'runner',
+            testRules                     : 'rules',
+            testCore                      : 'core',
+            testExtJunit                  : 'junit',
+            androidxArchCore              : 'core-testing',
+            robolectric                   : 'robolectric',
+            hilt_testing                  : 'hilt-android-testing',
+            roomTest                      : 'room-testing',
+            fragment_testing              : 'fragment-testing',
+            espresso                      : 'espresso-core'
     ]
 
     ext.groupz = [
@@ -100,6 +134,21 @@ buildscript {
 
             // Other libraries
             glide           : 'com.github.bumptech.glide',
+
+            //test
+            coroutines_test : 'org.jetbrains.kotlinx',
+            junit           : 'junit',
+            assertJ         : 'org.assertj',
+            mockitoKotlin   : 'com.nhaarman.mockitokotlin2',
+            mockitoInline   : 'org.mockito',
+            testRunner      : 'androidx.test',
+            testRules       : 'androidx.test',
+            testCore        : 'androidx.test',
+            testExtJunit    : 'androidx.test.ext',
+            androidxArchCore: 'androidx.arch.core',
+            robolectric     : 'org.robolectric',
+            roomTest        : 'androidx.room',
+            espresso        : 'androidx.test.espresso'
     ]
 
     ext.deps = [
@@ -136,6 +185,24 @@ buildscript {
             // Other libraries
             glide                         : "$groupz.glide:$modulez.glide:$versions.glide",
             glide_compiler                : "$groupz.glide:$modulez.glide_compiler:$versions.glide",
+
+            //test
+            coroutines_test               : "$groupz.coroutines_test:$modulez.coroutines_test:$versions.coroutines_test",
+            junit                         : "$groupz.junit:$modulez.junit:$versions.junit",
+            assertJ                       : "$groupz.assertJ:$modulez.assertJ:$versions.assertJ",
+            mockitoCore                   : "$groupz.mockitoInline:$modulez.mockitoCore:$versions.mockitoCore",
+            mockitoKotlin                 : "$groupz.mockitoKotlin:$modulez.mockitoKotlin:$versions.mockitoKotlin",
+            mockitoInline                 : "$groupz.mockitoInline:$modulez.mockitoInline:$versions.mockitoInline",
+            testRunner                    : "$groupz.testRunner:$modulez.testRunner:$versions.testRunner",
+            testRules                     : "$groupz.testRules:$modulez.testRules:$versions.testRules",
+            testCore                      : "$groupz.testCore:$modulez.testCore:$versions.testCore",
+            testExtJunit                  : "$groupz.testExtJunit:$modulez.testExtJunit:$versions.testExtJunit",
+            androidxArchCore              : "$groupz.androidxArchCore:$modulez.androidxArchCore:$versions.androidxArchCore",
+            robolectric                   : "$groupz.robolectric:$modulez.robolectric:$versions.robolectric",
+            hilt_testing                  : "$groupz.hilt:$modulez.hilt_testing:$versions.hilt",
+            roomTest                      : "$groupz.roomTest:$modulez.roomTest:$versions.room",
+            fragment_testing              : "$groupz.fragment:$modulez.fragment_testing:$versions.fragment_testing",
+            espresso                      : "$groupz.espresso:$modulez.espresso:$versions.espresso"
     ]
 
     repositories {
