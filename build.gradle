@@ -21,6 +21,7 @@ buildscript {
 
             // jetpack components
             room            : '2.4.2',
+            viewpager2      : '1.0.0',
 
             //google
             material   : '1.5.0',
@@ -52,6 +53,7 @@ buildscript {
             room_runtime                  : 'room-runtime',
             room_ktx                      : 'room-ktx',
             room_compiler                 : 'room-compiler',
+            viewpager2                    : 'viewpager2',
 
             //google
             material                      : 'material',
@@ -83,6 +85,7 @@ buildscript {
 
             // jetpack components
             room            : 'androidx.room',
+            viewpager2      : 'androidx.viewpager2',
 
             //google
             material  : 'com.google.android.material',
@@ -114,6 +117,7 @@ buildscript {
             room_runtime                  : "$groupz.room:$modulez.room_runtime:$versions.room",
             room_ktx                      : "$groupz.room:$modulez.room_ktx:$versions.room",
             room_compiler                 : "$groupz.room:$modulez.room_compiler:$versions.room",
+            viewpager2                    : "$groupz.viewpager2:$modulez.viewpager2:$versions.viewpager2",
 
             //google
             google_material               : "$groupz.material:$modulez.material:$versions.material",

@@ -55,6 +55,7 @@ dependencies {
     implementation deps.room_runtime
     implementation deps.room_ktx
     kapt deps.room_compiler
+    implementation deps.viewpager2
 
     // Google
     implementation deps.google_material
