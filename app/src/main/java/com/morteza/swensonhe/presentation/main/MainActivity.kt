@@ -1,7 +1,8 @@
-package com.morteza.swensonhe
+package com.morteza.swensonhe.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.morteza.swensonhe.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
